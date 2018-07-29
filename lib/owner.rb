@@ -1,28 +1,10 @@
 class Owner
   # code goes here
+  
+  attr_accessor :pets, :name, :species 
   def initialize(species = "human")
     @species = species
     @pets = {:fishes => [], :dogs => [], :cats => [] }
-  end
-
-  def pets
-    @pets
-  end
-
-  def species
-    @species
-  end
-
-  def say_species
-    "I am a #{@species}."
-  end
-
-  def name=(name)
-    @name = name
-  end
-
-  def name
-    @name
   end
 
   def buy_fish(name)
